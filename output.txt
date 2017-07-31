@@ -1,0 +1,14 @@
+vagrant@vagrant:/vagrant$ python3 log_analysis_v1.py
+Candidate is jerk, alleges rival - 338647
+Bears love berries, alleges bear - 253801
+Bad things gone, say good people - 170098
+
+The most popular authors of all time are:
+Ursula La Multa - 507594
+Rudolf von Treppenwitz - 423457
+Anonymous Contributor - 170098
+Markoff Chaney - 84557
+
+The days with more than 1% of requests leading to errors are:
+Jul 17, 2016 - 2.26%
+vagrant@vagrant:/vagrant$ 
