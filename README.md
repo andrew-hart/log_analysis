@@ -9,13 +9,13 @@ A summary of the answers to these questions can be found in the `output.txt` fil
 
 # Requirements
 The requirments for this assignment are as follows:
--Python 3: `3.6.1`
--PostgreSQL: `9.5.7`
--psycopgq: `2.7.3`
+-Python 3: `3.6.1`  
+-PostgreSQL: `9.5.7`  
+-psycopgq: `2.7.3`  
 
 # How To Setup the Peoject
 1. Install VirtualBox and Vagrant.
-2. Clone the [/udacity/fullstack-nanodegree-vm](https://github.com/udacity/fullstack-nanodegree-vm) repository and make a local copy
+2. Clone the [fullstack-nanodegree-vm](https://github.com/udacity/fullstack-nanodegree-vm) repository and make a local copy
 2. Download the data here
 3. Download the `news` database from here 
 4. 
