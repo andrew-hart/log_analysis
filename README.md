@@ -8,7 +8,9 @@ The questions for this assignment were as follows:
 A summary of the answers to these questions can be found in the `output.txt` file. 
 
 # Requirements
-The requirments for this assignment are as follows:
+The requirments for this assignment are as follows:  
+-Virtual Box  
+-Vagrant  
 -Python 3: `3.6.1`  
 -PostgreSQL: `9.5.7`  
 -psycopgq: `2.7.3`  
