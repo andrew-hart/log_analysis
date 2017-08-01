@@ -4,14 +4,23 @@ This project was completed as part of the _Full Stack Web Developer Nanodegree P
 The questions for this assignment were as follows:
 1. What are the most popular three articles of all time? 
 2. Who are the most popular article authors of all time?
-3. On which days did more than 1% of requests lead to errors?
+3. On which days did more than 1% of requests lead to errors? <br />
 A summary of the answers to these questions can be found in the `output.txt` file. 
 
-# How To Use
-Fork the `log_analysis` repository <br />
-Make a local copy the `log_analysis` repository <br />
-Connect to the `news` database <br />
-Run `log_analysis.py` <br />
+# Requirements
+The requirments for this assignment are as follows:
+-Python 3: `3.6.1`
+-PostgreSQL: `9.5.7`
+-psycopgq: `2.7.3`
+
+# How To Setup the Peoject
+1. Install VirtualBox and Vagrant.
+2. Clone the [/udacity/fullstack-nanodegree-vm](https://github.com/udacity/fullstack-nanodegree-vm) repository and make a local copy
+2. Download the data here
+3. Download the `news` database from here 
+4. 
+
+
 
 # Views created for this project
 To answer the third question the following views were created: <br />
