@@ -22,7 +22,7 @@ The requirments for this assignment are as follows:
 3. Clone or download [this](https://github.com/andrew-hart/log_analysis) repository
 4. Unzip the `newdata`. The file inside is called `newsdata.sql`
 5. Launch the Vagrant VM from inside the vagrant directory which is in in the fullstack-nanodegree-vm repository with the following command: `vagrant up`
-6. Log in with the following command: `vagrant ssh`
+6. Log in with the following command: `vagrant ssh` 
 7.Navigate to the `vagrant` directory with the following command: `cd /vagrant`
 
 # Setting up the Database
