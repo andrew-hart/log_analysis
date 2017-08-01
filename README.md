@@ -22,7 +22,7 @@ The requirments for this assignment are as follows:
 3. Clone or download [this](https://github.com/andrew-hart/log_analysis) repository
 4. Unzip the `newdata`. The file inside is called `newsdata.sql`
 5. Launch the Vagrant VM from inside the vagrant directory which is in in the fullstack-nanodegree-vm repository with the following command: `vagrant up`
-6. Log in with the following command: `vagrant ssh`  
+6. Log in with the following command: `vagrant ssh`
 7.Navigate to the `vagrant` directory with the following command: `cd /vagrant`
 
 # Setting up the Database
@@ -32,14 +32,14 @@ The requirments for this assignment are as follows:
 # Views created for this project
 To answer the third question the following views will need to be created:
 
-To create the `errors` view run the following command:
+To create the `errors` view run the following command:  
 `create view errors as select time::date as date, count(*) as errors from log where status = '404 NOT FOUND' group by date order by date;`  
 
-To create the `total` view run the following command:
+To create the `total` view run the following command:  
 `create view total as select time::date as date, count(*) as total from log group by date order by date;`
 
 # Running the queries
-To run the the queries run the following command from the vagrant directory:
+To run the the queries run the following command from the vagrant directory:  
 `python3 log_analysis.py`
 
 
