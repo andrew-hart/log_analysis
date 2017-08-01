@@ -18,7 +18,7 @@ The requirments for this assignment are as follows:
 # How To Setup the Peoject
 1. Install VirtualBox and Vagrant.
 2. Clone the [fullstack-nanodegree-vm](https://github.com/udacity/fullstack-nanodegree-vm) repository and make a local copy
-3. Download the `news` database from [here](newsdata.zip) 
+3. Download the `news` database from here: newsdata.zip 
 4. 
 
 
