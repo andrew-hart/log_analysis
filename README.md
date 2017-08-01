@@ -15,21 +15,30 @@ The requirments for this assignment are as follows:
 -PostgreSQL: `9.5.7`  
 -psycopgq: `2.7.3`  
 
-# How To Setup the Peoject
+# Setting up the Project
 1. Install VirtualBox and Vagrant.
-2. Clone the [fullstack-nanodegree-vm](https://github.com/udacity/fullstack-nanodegree-vm) repository and make a local copy
-3. Download the `news` database from here: newsdata.zip 
-4. 
+2. Clone or download the [fullstack-nanodegree-vm](https://github.com/udacity/fullstack-nanodegree-vm) 
+3. Clone or download [this](https://github.com/andrew-hart/log_analysis) repository
+4. Unzip the `newdata`. The file inside is called `newsdata.sql`
+5. Launch the Vagrant VM from inside the vagrant directory which is in in the fullstack-nanodegree-vm repository with the following command: `vagrant up`
+6. Log in with the following command: `vagrant ssh`
+7.Navigate to the `vagrant` directory with the following command: `cd /vagrant`
 
-
+# Setting up the Database
+1. Load the data into your local database with the following command: `psql -d news -f newsdata.sql`
+2. Connect to the database with the following command: `psql -d news`
 
 # Views created for this project
-To answer the third question the following views were created: <br />
-`create view errors as select time::date as date, count(*) as errors from log where status = '404 NOT FOUND' group by date order by date;
-` <br /> <br />
-`create view total as select time::date as date, count(*) as total from log group by date order by date;
-` <br /> <br />
-`create view summary as select date.total, errors.errors, total.total from errors, total where errors.date = total.date;
-` <br /> <br />
-`create view error_table as select date, 100 * (CAST(errors as float)/Cast(total as float)) as results from summary;
-` <br />
+To answer the third question the following views will need to be created:
+
+To create the `errors` view run the following command:
+`create view errors as select time::date as date, count(*) as errors from log where status = '404 NOT FOUND' group by date order by date;`  
+
+To create the `total` view run the following command:
+`create view total as select time::date as date, count(*) as total from log group by date order by date;`
+
+# Running the queries
+To run the the queries run the following command from the vagrant directory:
+`python3 log_analysis.py`
+
+
